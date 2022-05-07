@@ -27,6 +27,12 @@ body {
     padding: 0 10px;
 }
 
+.container-fluid {
+    max-width: 1960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
 .subtitle {
     font-family: 'Yellowtail', cursive;
     color: $accent;
@@ -36,13 +42,13 @@ body {
 
 .button {
     display: inline-block;
-        color: $default;
-        padding: 25px 71px 25px 33px;
-        background-color: #EFD372;
-        border: 1px solid #EFD372;
-        border-radius: 16px;
-        transition: all .3s;
-        position: relative;
+    color: $default;
+    padding: 25px 71px 25px 33px;
+    background-color: #EFD372;
+    border: 1px solid #EFD372;
+    border-radius: 16px;
+    transition: all .3s;
+    position: relative;
         &::after {
             position: absolute;
             content: '';
@@ -59,8 +65,4 @@ body {
         }
 }
 
-// .container-fluid {
-//     max-width: 1920px;
-//     padding: 0 10px;
-//     margin: 0 auto;
-// }
+
