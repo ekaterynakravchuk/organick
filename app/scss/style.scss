@@ -33,6 +33,25 @@
             color: $accent;
         }
     }
+    &__burger {
+        width: 56px;
+        height: 56px;
+        background-color: $default;
+        border-radius: 50%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 20px;
+        & span {
+            width: 35px;
+            height: 4px;
+            margin: 3px auto;
+            border-radius: 3px;
+            background-color: #fff;
+            display: block;
+        }
+    }
     &__cart {
         display: flex;
         align-items: center;
@@ -72,10 +91,12 @@
         margin: 0 -25px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__card {
         padding: 25px;
         width: 50%;
+        max-width: 665px;
         &:first-child,
         &:first-child .subtitle {
             color: #fff;
@@ -185,6 +206,7 @@
         border-radius: 30px;
         padding: 30px;
         color: $default;
+        height: 100%;
     }
     &__tag {
         background-color: $default;
@@ -209,6 +231,7 @@
     }
     &__price {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         font-family: 'Open Sans', sans-serif;
     }
@@ -347,7 +370,7 @@
         width: 50%;
         & img {
             width: 100%;
-            height: auto;
+            height: 100%;
             object-fit: cover;
         }
     }
@@ -560,6 +583,10 @@
             height: 28px;
             background-size: contain;
             background-repeat: no-repeat;
+        }
+        &:hover {
+            background-color: #EFD372;
+            color: $default;
         }
     }
 }
