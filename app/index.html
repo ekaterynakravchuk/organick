@@ -21,21 +21,24 @@
                     <img class="header__logo-img" src="images/logo.png" alt="Organick">
                 </a>
                 <nav class="header__menu">
+                    <a class="header__close-btn" href="#">
+                        <span></span>
+                    </a>
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Home</a>
+                            <a class="header__menu-link" href="#home" data-scroll="#home">Home</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">About Us</a>
+                            <a class="header__menu-link" href="#about" data-scroll="#about">About Us</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Shop</a>
+                            <a class="header__menu-link" href="#products" data-scroll="#products">Shop</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Pages</a>
+                            <a class="header__menu-link" href="#news" data-scroll="#news">Pages</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-link" href="#">Contact Us</a>
+                            <a class="header__menu-link" href="#contacts" data-scroll="#contacts">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -54,7 +57,7 @@
     </header>
     <div class="wrapper">
         <div class="main">
-            <section class="home">
+            <section class="home" id="home">
                 <div class="container">
                     <div class="home__inner">
                         <div class="home__content">
@@ -95,7 +98,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__img">
@@ -140,7 +143,7 @@
                     </div>
                 </div>
             </section>
-            <section class="products">
+            <section class="products" id="products">
                 <div class="container">
                     <div class="products__inner">
                         <span class="subtitle">Organic</span>
@@ -419,7 +422,7 @@
                     </div>
                 </div>
             </section>
-            <section class="news">
+            <section class="news" id="news">
                 <div class="container">
                     <div class="news__inner">
                         <div class="news__top">
@@ -481,7 +484,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <div class="container">
                     <div class="contacts__inner">
                         <div class="contacts__address">
